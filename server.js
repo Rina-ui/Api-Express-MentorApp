@@ -1,7 +1,7 @@
 import http from 'http';
 import app from './app.js';
 
-const normslizePort = (val) => {
+const normalizePort = (val) => {
     const port = parseInt(val, 10);
     if (isNaN(port)) {
         return val;
