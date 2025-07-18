@@ -1,0 +1,30 @@
+{
+  "name": "mentor-api-express",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rina-ui/Api-Express-MentorApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rina-ui/Api-Express-MentorApp/issues"
+  },
+  "homepage": "https://github.com/Rina-ui/Api-Express-MentorApp#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "brcypt": "^1.0.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.8.7",
+    "mongoose-unique-validator": "^4.0.1",
+    "validator": "^13.15.15"
+  }
+}
