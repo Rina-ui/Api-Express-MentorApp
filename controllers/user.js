@@ -3,7 +3,7 @@ import User from '../models/user.js';
 import jwt from 'jsonwebtoken';
 
 export const registerUser = async (req, res) => {
-    const {username, email, password} = req.body;
+    const {username, email, password, role} = req.body;
 
     try{
         const existingUser = await User.findOne({ $or: [{ username }, { email }] });
@@ -30,7 +30,7 @@ export const registerUser = async (req, res) => {
 }
 
 export const loginUser = async (req, res) => {
-    const {username, password} = req.body;
+    const {username, password, role} = req.body;
 
     try{
         const user = await User.findOne({username: req.body.username});
