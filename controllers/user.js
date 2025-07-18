@@ -17,7 +17,8 @@ export const registerUser = async (req, res) => {
         const user = new User({
             username: req.body.username,
             email: req.body.email,
-            password: hashedPassword
+            password: hashedPassword,
+            role
         });
 
         await user.save();
@@ -53,6 +54,7 @@ export const loginUser = async (req, res) => {
         return res.status(200).json({
             userId: user._id,
             token: token,
+            role: user.role
         });
 
     }catch (error) {
